@@ -17,13 +17,17 @@
     </div>
     <div>
       <label>Parts List:</label>
-      <ul>
+      <ul class="parts-list">
         <li *ngFor="let part of robot.parts; let i = index">
-          <a
-            routerLink="/partDetail/{{part.part.id}}">
+          <a routerLink="/partDetail/{{part.part.id}}">
             <span>{{i+1}}.{{part.part.name}}
                     Condition:{{part.condition}}
             </span>
+            <!--<span class="condition-bar">-->
+                <!--<span class="condition-bar-value" [style.width.%]="part.condition"-->
+                      <!--[ngClass]="{'green': part.condition>=50, 'yellow': part.condition<50 && part.condition>=30, 'red': part.condition<30}"></span>-->
+            <!--</span>-->
+            <!--<span>{{part.condition}}%</span>-->
           </a>
         </li>
       </ul>
