@@ -1,11 +1,20 @@
-<div class='header' id="header-navbar">
-  <span class="logo">
+<header class='header'>
+
   <h1>
-    Robots App
+    <a routerLink="/" (click)="toggleSelect('robot')">
+      <img src="../../../assets/images/icon.png" class="logo">
+      <span>ROBOT FACTORY</span>
+    </a>
   </h1>
-  </span>
+
   <nav>
-    <button type="button" [ngClass]="{'selected':isRobotsSelected === true}" (click)="toggleSelect('robot')"><a routerLink="/robots">Robots</a></button>
-    <button type="button" [ngClass]="{'selected':isRobotsSelected === false}" (click)="toggleSelect('part')"><a routerLink="/parts">Parts</a></button>
+    <button routerLink="/robots" type="button" [ngClass]="{'selected':isRobotsSelected === true}"
+            (click)="toggleSelect('robot')">
+      Robots
+    </button>
+    <button routerLink="/parts" type="button" [ngClass]="{'selected':isRobotsSelected === false}"
+            (click)="toggleSelect('part')">
+      Parts
+    </button>
   </nav>
-</div>
+</header>

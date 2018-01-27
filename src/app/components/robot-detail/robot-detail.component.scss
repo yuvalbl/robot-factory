@@ -1,47 +1,38 @@
-.robot-div {
-  display: inline-block;
-  width: 30%;
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  height: 30%;
-  padding: 3px;
-  background-color: rgba(221, 221, 221,0.2);
-  margin:15px;
+:host {
+  display: flex;
+  .robot-div {
+    background-color: rgba(249, 249, 249, 0.55);
+    padding: 20px;
+    display: flex;
+    margin: auto;
 
-  div {
-    margin:10px;
-  }
-  label {
-    font-size:1rem;
-    display: inline-block;
+    div {
+      margin: 10px;
+    }
+    label {
+      font-size: 1rem;
+      display: inline-block;
 
-  }
-  span {
-    font-size:1rem;
-    font-weight: bold;
+    }
+    span {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .btn-back {
+      font-size: 14px;
+      border-radius: 3px;
+      display: inline-block;
+      height: 30px;
+      width: 80px;
+      height: 40px;
+      border: none;
+      background: lightblue;
+      cursor: pointer;
+    }
+    .btn-back:hover {
+      background: #83d2f4;
+    }
   }
 
-  .robot-image{
-    display: inline-block;
-    width:25%;
-  }
-  .robot-info {
-    display: inline-block;
-    width:50%;
-  }
-
-  .btn-back {
-    border-radius: 3px;
-    display: inline-block;
-    height: 30px;
-    width: 80px;
-    height: 40px;
-    border: none;
-    background: lightblue;
-    cursor: pointer;
-  }
-  .btn-back:hover {
-    background: gray;
-  }
 }

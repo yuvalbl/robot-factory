@@ -1,21 +1,13 @@
 /* DashboardComponent's private CSS styles */
 .part-div {
-  display: inline-block;
-  width: 70%;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  height: 30%;
-  padding: 3px;
-  margin-left: 5px;
-  background-color: rgba(221, 221, 221,0.1);
-
-
+  display: flex;
+  max-width: 80%;
+  margin: auto;
 
   img {
-    width:30px;
-    height:30px;
-    display:inline;
+    width: 30px;
+    height: 30px;
+    display: inline;
   }
 
   .part-div-card {
@@ -35,9 +27,9 @@
   }
   a, a:visited {
     text-decoration: none;
-    color:coral;
-    display:inline-block;
-    width:100%;
-    height:100%;
+    color: coral;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
   }
 }

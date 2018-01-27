@@ -1,31 +1,20 @@
 /* DashboardComponent's private CSS styles */
 .robot-div {
-  display: inline-block;
-  width: 50%;
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  height: 30%;
-  padding: 3px;
-  margin-left: 5px;
-  background-color: rgba(221, 221, 221,0.1);
+  display: flex;
+  max-width: 80%;
+  margin: auto;
 
-
-.robot-div-card {
-  color: #eee;
-  min-width: 55px;
-  border-radius: 2px;
-  height: 100px;
-  width: 150px;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  margin-left: 50px;
-  background-image: url("~../src/assets/images/robotic-arm.png");
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
+  .robot-div-card {
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    background-image: url("~../src/assets/images/robotic-arm.png");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
   a, a:visited {
     text-decoration: none;
     color:coral;

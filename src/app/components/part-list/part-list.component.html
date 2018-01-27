@@ -1,11 +1,8 @@
-<p>
-  part-list works!
-</p>
 <div class="part-div">
-<div class="part-div-card" *ngFor="let part of parts">
-  <a
-    routerLink="/partDetail/{{part.id}}">
-    <span>{{part.name}}</span>
-  </a>
-</div>
+  <div class="part-div-card" *ngFor="let part of parts">
+    <a
+      routerLink="/partDetail/{{part.id}}">
+      <span>{{part.name}}</span>
+    </a>
+  </div>
 </div>

@@ -1,47 +1,43 @@
-.part-div {
-  display: inline-block;
-  width: 30%;
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  height: 30%;
-  padding: 3px;
-  margin-left: 5px;
-  background-color: rgba(221, 221, 221,0.2);
+:host {
+  display: flex;
+  .part-div {
+    background-color: rgba(249, 249, 249, 0.55);
+    padding: 20px;
+    display: flex;
+    margin: auto;
 
-  div {
-    margin:10px;
-  }
-  label {
-    font-size:1rem;
-    display: inline-block;
+    div {
+      margin: 10px;
+    }
+    label {
+      font-size: 1rem;
+      display: inline-block;
 
-  }
-  span {
-    font-size:1rem;
-    font-weight: bold;
-  }
+    }
+    span {
+      font-size: 1rem;
+      font-weight: bold;
+    }
 
-  .part-image{
-    display: inline-block;
-    width:25%;
-  }
-  .part-info {
-    display: inline-block;
-    width:40%;
-  }
+    .part-image img {
+      height: 100px;
+    }
+    .part-info {
+      display: inline-block;
+    }
 
-  .btn-back {
-    border-radius: 3px;
-    display: inline-block;
-    height: 30px;
-    width: 80px;
-    height: 40px;
-    border: none;
-    background: lightblue;
-    cursor: pointer;
-  }
-  .btn-back:hover {
-    background: gray;
+    .btn-back {
+      border-radius: 3px;
+      display: inline-block;
+      height: 30px;
+      width: 80px;
+      height: 40px;
+      border: none;
+      background: lightblue;
+      cursor: pointer;
+    }
+    .btn-back:hover {
+      background: #83d2f4;
+    }
   }
 }
