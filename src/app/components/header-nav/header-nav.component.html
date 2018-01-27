@@ -1,0 +1,11 @@
+<div class='header' id="header-navbar">
+  <span class="logo">
+  <h1>
+    Robots App
+  </h1>
+  </span>
+  <nav>
+    <button type="button" [ngClass]="{'selected':isRobotsSelected === true}" (click)="toggleSelect('robot')"><a routerLink="/robots">Robots</a></button>
+    <button type="button" [ngClass]="{'selected':isRobotsSelected === false}" (click)="toggleSelect('part')"><a routerLink="/parts">Parts</a></button>
+  </nav>
+</div>

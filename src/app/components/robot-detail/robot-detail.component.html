@@ -1,0 +1,33 @@
+<div class="robot-div">
+  <div class="robot-image">
+  <img src="assets/images/robotic-arm.png">
+</div>
+  <div class="robot-info">
+    <div>
+      <label>Name</label>
+      <span>{{robot.name}}</span>
+    </div>
+    <div>
+      <label>Type</label>
+      <span>{{robot.type}}</span>
+    </div>
+    <div>
+      <label>Age</label>
+      <span>{{robot.age}}</span>
+    </div>
+    <div>
+      <label>Parts List:</label>
+      <ul>
+        <li *ngFor="let part of robot.parts; let i = index">
+          <a
+            routerLink="/partDetail/{{part.part.id}}">
+            <span>{{i+1}}.{{part.part.name}}
+                    Condition:{{part.condition}}
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button (click)="goBack()" class="btn-back">go back</button>
+</div>

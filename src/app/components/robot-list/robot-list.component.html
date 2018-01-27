@@ -1,0 +1,9 @@
+<div class="robot-div">
+  <div *ngFor="let robot of robots" class="robot-div-card">
+       <a
+         routerLink="/detail/{{robot.id}}">
+         <span>{{robot.name}}</span>
+    </a>
+  </div>
+</div>
+
