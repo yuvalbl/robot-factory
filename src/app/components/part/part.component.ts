@@ -5,7 +5,7 @@ import {Part} from '../../models/part.model';
 import {PartsService} from '../../services/parts.service';
 
 @Component({
-  selector: 'app-robot-detail',
+  selector: 'app-part-detail',
   templateUrl: './part.component.html',
   styleUrls: ['./part.component.scss'],
   providers: [PartsService]
